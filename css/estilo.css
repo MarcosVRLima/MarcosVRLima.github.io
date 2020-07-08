@@ -140,7 +140,7 @@ header#cabecalho-artigo h3{
     color: #606060;
 }
 .direita{
-    text-align: right   ;
+    text-align: right;
 }
 table#tabelaspec{
     border: 1px solid #606060;
@@ -157,11 +157,13 @@ table#tabelaspec td{
 table#tabelaspec td.ce{
     color: white;
     background-color: #606060;
+    text-align: right;
     vertical-align: top;
     font-weight: bold;
 }
 table#tabelaspec td.cd{
     background-color: #cecece;
+    text-align: left;
 }
 table#tabelaspec caption{
     color: #888888;
@@ -171,7 +173,6 @@ table#tabelaspec caption{
 table#tabelaspec caption span{
     display: block;
     float: right;
-    color: black;
     font-size: 8pt;
     margin-top: 10px;
 }

@@ -1,110 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
-        <meta charset="utf-8">
-        <title>Tudo sobre Google Glass</title>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
-        <script type="text/javascript" src="javascript/funcoes.js"></script>
+        <link rel="icon" href="https://i1.wp.com/sobral.ufc.br/wp-content/uploads/2014/11/brasao_quadrado-5478b641_site_icon.png?fit=32%2C32&amp;ssl=1" sizes="32x32">
+        <title>GuiLab - Gerenciamento de laboratórios da UFC - Sobral - Página Inicial</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/sass/materialize.css" media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/style.css" media="screen,projection"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-        <div id="interface">
-            <header id="cabecalho">
-                <hgroup>
-                    <h1>Google Glass</h1>
-                    <h2>A revolução do Google está chegando</h2>
-                </hgroup>
-                <img id="icone" src="imagens/glass-oculos-preto-peq.png">
-                <nav id="menu" onmouseout="mudaFoto('imagens/glass-oculos-preto-peq.png')">
-                    <h1>Menu Principal</h1>
-                    <ul type="disc">
-                        <li onmouseover="mudaFoto('imagens/home.png')"><a href="index.html">Home</a></li>
-                        <li onmouseover="mudaFoto('imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
-                        <li onmouseover="mudaFoto('imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
-                        <li onmouseover="mudaFoto('imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
-                        <li onmouseover="mudaFoto('imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <section id="corpo">
-                <article id="noticia-principal">
-                    <header id="cabecalho-artigo">
-                        <hgroup>
-                            <h3>Tecnologia > Inovações</h3>
-                            <h1>Saiba tudo sobre o Google Glass</h1>
-                            <h2>por Gustavo Guanabara</h2>
-                            <h3 class="direita">Atualizado em 23/Abril/2013</h3>
-                        </hgroup>
-                    </header>
-                    <h2>O que é</h2>
-                    <p>O <b>Google Glass</b> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="https://www.google.com/glass/start/" target="_blank"><i>Project Glass</i></a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
-                    <figure class="foto-legenda">
-                        <img src="imagens/glass-quadro-homem-mulher.jpg">
-                        <figcaption>
-                            <h3>Goggle Glass</h3>
-                            <p>Uma nova maneira de ver o mundo</p>
-                        </figcaption>
-                    </figure>
-                    <h2>Data de lançamento</h2>
-                    <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
-
-                    <h2>Especificações Técnicas</h2>
-                    <table id="tabelaspec">
-                        <caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
-                        <tr>
-                            <td class="ce">Tela</td>
-                            <td class="cd">Resolução equivalente a tela de 25"</td>
-                        </tr>
-                        <tr>
-                            <td class="ce" rowspan="2">Camera</td>
-                            <td class="cd">5MP para fotos</td>
-                        </tr>
-                        <tr>
-                            <td class="cd">720p para vídeos</td>
-                        </tr>
-                        <tr>
-                            <td class="ce" rowspan="2">Conectividade</td>
-                            <td class="cd">Wi-Fi</td>
-                        </tr>
-                        <tr>
-                            <td class="cd">Bluetooth</td>
-                        </tr>
-                        <tr>
-                            <td class="ce">Memória Interna</td>
-                            <td class="cd">12GB</td>
-                        </tr>
-                    </table>
-                    <h2>Como funciona</h2>
-                    <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
-
-                    <h2>O que você pode fazer com o Google Glasses</h2>
-                    <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
-
-                    <div id="tv-radio">
-                        <video src="media/one-day.mp4" controls="controls"></video>
-                    </div>
-                </article>
-            </section>
-
-            <aside id="lateral">
-                <h1>Outras Notícias</h1>
-                <h2>Vídeo mais recente</h2>
-
-                <div id="tv-radio">
-                    <video src="media/how-it-feels.mp4" controls="controls"></video>
+        <header>
+            <div class="row blue azul2">
+                <div class="col s12 m8 offset-m2 l6 offset-l3 center">
+                    <img src="imagens/ufc-logo2.png" alt="" class="responsive-img" style="margin: 50px 0px 50px 0px;">
                 </div>
+            </div>
+            <div class="block blue azul">
+              <nav class="blue azul">
+                  <div class="nav-wrapper">
+                      <div class="container">
+                          <a href="#" class="brand-logo"><img src="imagens/logo.png" alt="" class="responsive-img" width="130px"></a>
+                          <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
 
-                <h2>Novidades no Glass</h2>
-                <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
+                          <ul class="hide-on-med-and-down right">
+                              <li class="hoverable"><a href="#"><i class="material-icons left yellow-text text-amarelo">home</i>Home</a></li>
+                              <li class="hoverable"><a href="#"><i class="material-icons left yellow-text text-amarelo">article</i>Informações</a></li>
+                              <li class="hoverable"><a href="#"><i class="material-icons left yellow-text text-amarelo">date_range</i>Agendamentos</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+            </div>
+            <ul class="sidenav" id="slide_out">
+                <li class="hoverable"><a href="#" class="blue-text text-azul"><i class="material-icons left yellow-text text-amarelo">home</i>Home</a></li>
+                <li class="hoverable"><a href="#" class="blue-text text-azul"><i class="material-icons left yellow-text text-amarelo">article</i>Informações</a></li>
+                <li class="hoverable"><a href="#" class="blue-text text-azul"><i class="material-icons left yellow-text text-amarelo">date_range</i>Agendamentos</a></li>
+            </ul>     
+        </header>
+        <br>
+        <section>
+          <div class="container">
+            <div class="carousel carousel-slider center z-depth-4 hoverable">
+              <div class="carousel-item white-text" href="#one!" id="imageCarousel1">
+                <div class="container captionCarousel hoverable">
+                  <h2>First Panel</h2>
+                  <p class="white-text">
+                    This is your first panel
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item white-text" href="#two!" id="imageCarousel2">
+                <div class="container captionCarousel hoverable">
+                  <h2>Second Panel</h2>
+                  <p class="white-text">This is your second panel</p>
+                </div>
+              </div>
+              <div class="carousel-item white-text" href="#three!" id="imageCarousel3">
+                <div class="container captionCarousel hoverable">
+                  <h2>Third Panel</h2>
+                  <p class="white-text">This is your third panel</p>
+                </div>
+              </div>
+              <div class="carousel-item white-text" href="#four!" id="imageCarousel4">
+                <div class="container captionCarousel hoverable">
+                  <h2>UFC - Informa</h2>
+                  <p class="white-text">Mediante a pandemia causada pelo COVID-19, os laboratórios de informática do campus de Sobral permanecerão fechados até uma ordem superior. Ate lá, a UFC recomenda que os alunos tomem as devidas proteções definidas pelo Ministério da Saúde.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m6 l4">
+                <div class="card z-depth-3">
+                  <div class="card-image hoverable">
+                    <img src="imagens/perfil1.jpg">
+                    <span class="card-title">Laboratório de programação</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light blue azul2"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Laboratório destinado aos cursos de engenharia para fins práticos na área de programação computacional.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l4">
+                <div class="card z-depth-3">
+                  <div class="card-image hoverable">
+                    <img src="imagens/perfil2.jpg">
+                    <span class="card-title">Laboratório de Simulações Numéricas</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light blue azul2"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Laboratório equipado com computadores e impressora, usado pelos cursos de engenharia para desenvolvimento de cálculos computacionais e simulações numéricas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 l4">
+                <div class="card z-depth-3">
+                  <div class="card-image hoverable">
+                    <img src="imagens/perfil3.jpg">
+                    <span class="card-title">Laboratório de Informática</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light blue azul2"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Laboratório equipado com computadores de uso livre. Tem por finalidade atender a demanda acadêmica de todos os alunos do campus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="page-footer blue azul">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12 center">
+                <a href="https://sobral.ufc.br/"><img src="imagens/ufc-logo.png" class="responsive-img" alt=""></a>
+              </div>
+              <div class="col l4 offset-l2 s12 center" style="margin-top: 30px;">
+                <a href="https://sti.ufc.br/" class="align-self-center"><img src="imagens/si-logo.png" class="responsive-img" alt="" ></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container center">
+              © 2020 Copyright Text
+            </div>
+          </div>
+        </footer>
+        <div class="block blue azul hide" id="navbarFixed">
+          <nav class="blue azul">
+              <div class="nav-wrapper">
+                  <div class="container">
+                      <a href="#" class="brand-logo"><img src="imagens/logo.png" alt="" class="responsive-img" width="130px"></a>
+                      <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
 
-                <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
-            </aside>
-
-            <footer id="rodape">
-                <p>Copyright &copy; 2013 - by Gustavo Guanabara<br>
-                <a href="https://facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="https://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
-            </footer>
+                      <ul class="hide-on-med-and-down right">
+                          <li class="hoverable"><a href="#"><i class="material-icons left yellow-text text-amarelo">home</i>Home</a></li>
+                          <li class="hoverable"><a href="#"><i class="material-icons left yellow-text text-amarelo">article</i>Informações</a></li>
+                          <li class="hoverable"><a href="#"><i class="material-icons left yellow-text text-amarelo">date_range</i>Agendamentos</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
         </div>
+        <!--JavaScript at end of body for optimized loading-->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+        <script>
+            //Sidenav
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+
+            //carousel
+            $(document).ready(function(){
+                $('.carousel.carousel-slider').carousel({
+                    shift: -150,
+                    duration: 300,
+                    fullWidth: true,
+                    indicators: true
+                });
+                setInterval(function(){
+                    $('.carousel').carousel('next');
+                }, 15000);
+            });
+            
+            //pushpin
+            $(function(){
+              $(window).scroll(function(){
+                if ($(this).scrollTop() < 255)
+                  {
+                      $('#navbarFixed').addClass('hide', 500);
+                  } else {
+                      $('#navbarFixed').removeClass('hide', 500); 
+                  }
+                });
+            });
+        </script>
     </body>
 </html>

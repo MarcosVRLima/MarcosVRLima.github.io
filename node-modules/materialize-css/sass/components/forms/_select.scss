@@ -58,7 +58,7 @@ select {
 
   input.select-dropdown {
     &:focus {
-      border-bottom: 1px solid $input-focus-color;
+      border-bottom: 1px solid #015b9c;
     }
     position: relative;
     cursor: pointer;

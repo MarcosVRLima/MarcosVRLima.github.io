@@ -24,6 +24,10 @@
 .captionCarousel p{
     text-align: center;
 }
+.contentCarousel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /*card configures*/
 .card-title{
     text-shadow: 2px 2px black;

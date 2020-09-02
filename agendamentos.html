@@ -45,80 +45,46 @@
         <section>
           <div class="container blue-grey lighten-5 z-depth-4">
             <div class="row">
-              <div class="col s12">
-                <div class="carousel carousel-slider center contentCarousel z-depth-2">
-                  <div class="carousel-item white-text" href="#one!" id="imageCarousel1">
-                    <div class="container captionCarousel hoverable">
-                      <h2>First Panel</h2>
-                      <p class="white-text">
-                        This is your first panel
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item white-text" href="#two!" id="imageCarousel2">
-                    <div class="container captionCarousel hoverable">
-                      <h2>Second Panel</h2>
-                      <p class="white-text">This is your second panel</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item white-text" href="#three!" id="imageCarousel3">
-                    <div class="container captionCarousel hoverable">
-                      <h2>Third Panel</h2>
-                      <p class="white-text">This is your third panel</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item white-text" href="#four!" id="imageCarousel4">
-                    <div class="container captionCarousel hoverable">
-                      <h2>UFC - Informa</h2>
-                      <p class="white-text">Mediante a pandemia causada pelo COVID-19, os laboratórios de informática do campus de Sobral permanecerão fechados até uma ordem superior. Ate lá, a UFC recomenda que os alunos tomem as devidas proteções definidas pelo Ministério da Saúde.</p>
-                    </div>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="nome_completo" type="text" class="validate">
+                    <label for="nome_completo">Nome completo</label>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <br>
-        <section>
-          <div class="container z-depth-4">
-            <div class="row">
-              <div class="col s12 m6 l4">
-                <div class="card z-depth-3">
-                  <div class="card-image hoverable">
-                    <img src="imagens/perfil1.jpg">
-                    <span class="card-title">Laboratório de programação</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light blue azul2"><i class="material-icons">add</i></a>
+                <div class="row">
+                  <div class="input-field col s6 m6 l6">
+                    <input id="matricula" type="number" class="validate" maxlength="6" max="999999">
+                    <label for="matricula">Matrícula</label>
                   </div>
-                  <div class="card-content">
-                    <p>Laboratório destinado aos cursos de engenharia para fins práticos na área de programação computacional.</p>
+                  <div class="input-field col s6 m6 l6">
+                    <input id="data" type="date" class="validate">
+                    <label for="data">Data</label>
                   </div>
                 </div>
-              </div>
-              <div class="col s12 m6 l4">
-                <div class="card z-depth-3">
-                  <div class="card-image hoverable">
-                    <img src="imagens/perfil2.jpg">
-                    <span class="card-title">Laboratório de Simulações Numéricas</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light blue azul2"><i class="material-icons">add</i></a>
-                  </div>
-                  <div class="card-content">
-                    <p>Laboratório equipado com computadores e impressora, usado pelos cursos de engenharia para desenvolvimento de cálculos computacionais e simulações numéricas.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6 l4">
-                <div class="card z-depth-3">
-                  <div class="card-image hoverable">
-                    <img src="imagens/perfil3.jpg">
-                    <span class="card-title">Laboratório de Informática</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light blue azul2"><i class="material-icons">add</i></a>
-                  </div>
-                  <div class="card-content">
-                    <p>Laboratório equipado com computadores de uso livre. Tem por finalidade atender a demanda acadêmica de todos os alunos do campus.</p>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Curso</option>
+                      <option value="ciencias_economicas">Ciências Econômicas</option>
+                      <option value="engenharia_computacao">Engenharia da Computação</option>
+                      <option value="engenharia_eletrica">Engenharia Elétrica</option>
+                      <option value="medicina">Medicina</option>
+                      <option value="musica">Música</option>
+                      <option value="odontologia">Odontologia</option>
+                      <option value="psicologia">Psicologia</option>
+                    </select>
                   </div>
                 </div>
-              </div>
-            </div>
+                <div class="row">
+                  <div class="col s12 center">
+                    <a class="waves-effect waves-light btn blue azul"><i class="material-icons right">close</i>Limpar</a>
+                    <a class="waves-effect waves-light btn blue azul"><i class="material-icons right">done_outline</i>Confirmar</a>
+                  </div>
+                </div>
+                <br>
+              </form>
+            </div>  
           </div>
         </section>
         <br>
@@ -163,19 +129,6 @@
             $(document).ready(function(){
                 $('.sidenav').sidenav();
             });
-
-            //carousel
-            $(document).ready(function(){
-                $('.carousel.carousel-slider').carousel({
-                    shift: -150,
-                    duration: 300,
-                    fullWidth: true,
-                    indicators: true
-                });
-                setInterval(function(){
-                    $('.carousel').carousel('next');
-                }, 15000);
-            });
             
             //pushpin
             $(function(){
@@ -187,6 +140,11 @@
                       $('#navbarFixed').removeClass('hide', 500); 
                   }
                 });
+            });
+
+            //input select
+            $(document).ready(function(){
+              $('select').formSelect();
             });
         </script>
     </body>
